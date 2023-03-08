@@ -7,14 +7,14 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: #060AB2;
+    background-color: #655DBB;
 }
 
 .memory-board {
     width: 640px;
     height: 640px;
     margin: auto;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     perspective: 1000px;
 }
@@ -44,10 +44,46 @@ body {
     padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background-color: #1c7cc1;
+    background-color: #ECF2FF;
     backface-visibility: hidden;
 }
 
 .front-view {
     transform: rotateY(180deg);
+}
+
+/* #start-screen {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height:200px;
+    width:250px;
+    text-align: center;
+} */
+
+#start-screen {
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 300;
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 0.7em;
+    /* padding: 1em 1.5em; */
+    padding: 5px 10px;
+    cursor: pointer;
 }

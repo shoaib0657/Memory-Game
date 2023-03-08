@@ -75,7 +75,21 @@ function resetBoard() {
     }
 })();
 
-for(var i = 0; i < cards.length; i++)
+function start()
 {
-    cards[i].addEventListener("click", flipCard);
+    let board = document.querySelector(".memory-board");
+    let start_button = document.querySelector("#start-screen");
+    
+    start_button.style.display = "none";
+    board.style.display = "flex";
+
+    for(var i = 0; i < cards.length; i++)
+    {
+        cards[i].addEventListener("click", flipCard);
+    }
 }
+
+(function startGame() {
+    let start_button = document.querySelector("#start-screen");
+    start_button.addEventListener("click", start);
+})();
